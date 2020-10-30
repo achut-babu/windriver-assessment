@@ -1,0 +1,13 @@
+replica: 1
+image:
+  repo: achut123/encrypt-decrypt
+  tag: latest
+healthcheck:
+  url: /api/health
+name: encrpt-decrypt-api
+containerPort: 5000
+service:
+  name: encrpt-decrypt-api
+  type: LoadBalancer
+  port: 5000
+  targetPort: 5000
