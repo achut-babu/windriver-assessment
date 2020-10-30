@@ -49,3 +49,10 @@ $ docker run achut123/encrypt-decrypt:latest pytest tests.py
 $ docker run achut123/encrypt-decrypt:latest coverage run tests.py
 $ docker run achut123/encrypt-decrypt:latest coverage report
 ```
+
+## Kubernetes Deployment Using Helm
+
+```bash
+$ cd helm/encrypt-decrypt-api
+$ helm upgrade --install encrypt-decrypt-api .
+```
